@@ -8,7 +8,8 @@ import React from "react";
 
 export const AppBar = () => {
   return (
-    <MuiAppBar position={"static"}>
+    <MuiAppBar position={"static"} sx={{zIndex: 10}}>
+               {/*// sx={{background: '#193a61'}}*/}
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           GTM Playground
