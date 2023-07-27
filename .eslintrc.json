@@ -6,7 +6,6 @@
 },
   "extends": [
   "plugin:react/recommended",
-  "airbnb",
   "plugin:prettier/recommended"
 ],
     "parser": "@typescript-eslint/parser",
@@ -37,7 +36,7 @@
       "import/no-extraneous-dependencies": [
     "error",
     {
-      "devDependencies": true,
+      "devDependencies": false,
       "optionalDependencies": false,
       "peerDependencies": false
     }
