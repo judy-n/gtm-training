@@ -33,14 +33,6 @@
   ],
       "no-unused-vars": "off",
       "import/prefer-default-export": "off",
-      "import/no-extraneous-dependencies": [
-    "error",
-    {
-      "devDependencies": false,
-      "optionalDependencies": false,
-      "peerDependencies": false
-    }
-  ],
       "react/prop-types": "off",
       "react/jsx-no-useless-fragment": "off",
       "react/no-array-index-key": "off",
