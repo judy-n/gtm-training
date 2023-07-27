@@ -17,6 +17,7 @@ import ProcomLogoSmall from "../../assets/procom-logo-small.svg";
 import GoogleAnalyticsLogo from "../../assets/google-analytics-logo.png";
 import ProcomLogo from "../../assets/procom-logo.png";
 import { LinkCard } from "../link-card";
+import { SectionTitle } from "../section-title";
 
 export const Homepage: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -30,7 +31,7 @@ export const Homepage: React.FC = () => {
   }, []);
 
   return (
-    <Stack>
+    <Stack sx={{ overflowX: "hidden" }}>
       <Snackbar
         open={copied}
         autoHideDuration={2000}
@@ -91,9 +92,7 @@ export const Homepage: React.FC = () => {
       </Stack>
       <Stack mt={3} p={3}>
         <Stack alignItems="center">
-          <Typography variant="h4" color="#18324b">
-            Resources
-          </Typography>
+          <SectionTitle title={"Resources"} />
           <Stack mt={2} gap={2} width="100%">
             <Typography variant="h6">Quick Links</Typography>
             <Grid container gap={2}>
@@ -158,22 +157,14 @@ export const Homepage: React.FC = () => {
           </Grid>
         </Stack>
       </Stack>
-      <Stack mt={5} gap={2} sx={{ overflowX: "hidden" }}>
+      <Stack mt={5} gap={2} mb={4} sx={{ overflowX: "hidden" }}>
         <Stack alignItems="center" gap={2}>
-          <Typography variant="h4" color="#18324b">
-            Form Demo
-          </Typography>
+          <SectionTitle title={"Form Demo"} />
           <Stack
-            sx={{
-              background: "#243249",
-              color: "white",
-              p: 2,
-              py: 4,
-              width: "100%",
-              borderBottom: "solid 12px #1a76d2",
-            }}
-            alignItems="center"
+            my={2}
             gap={2}
+            sx={{ overflowX: "hidden" }}
+            alignItems="center"
           >
             <Typography variant="body1">
               Click on the button below to go to the <strong>demo form</strong>.
@@ -186,13 +177,18 @@ export const Homepage: React.FC = () => {
         </Stack>
       </Stack>
       <Stack
-        mt={5}
-        mb={2}
-        gap={2}
-        sx={{ overflowX: "hidden" }}
+        sx={{
+          background: "#243249",
+          color: "white",
+          py: 4,
+          width: "100%",
+          borderBottom: "solid 12px #1a76d2",
+          overflowX: "hidden",
+        }}
         alignItems="center"
+        gap={2}
       >
-        <Typography variant="h4" color="#18324b">
+        <Typography variant="h4" textAlign={"center"}>
           Share
         </Typography>
         <Typography variant="body1">
