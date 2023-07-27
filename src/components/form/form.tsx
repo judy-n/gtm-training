@@ -1,3 +1,5 @@
+import { AppBar } from "../appbar";
+
 export const Form = () => {
-  return <>form</>;
+  return <AppBar />;
 };
